@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <pre id="output"></pre>
+
+    <button>-</button>
+    <span id="value">0</span>
+    <button onclick="increment()">+</button>
+    <script>
+        //#1
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+    document.getElementById("demo").innerHTML =
+    "The value of z is: " + z;
+
+    
+    var x = 5;
+    var y = 6;
+    var z = x * y;
+    document.getElementById("demo1").innerHTML =
+    "The value of z is: " + z;
+
+    var x = 5;
+    var y = 6;
+    var z = x / y;
+    document.getElementById("demo2").innerHTML =
+    "The value of z is: " + z; 
+  
+
+
+
+ //#2
+
+
+let count = 0;
+const value = document.getElementById("value");
+
+function increment() { 
+    count++;
+    value.innerText = count;
+}
+
+
+//#3
+
+var x = 17;
+        var y = 5;
+        var result = x >= y;
+        document.getElementById('output').innerHTML += 'x greater than or equal to y ?  ' + result;
+
+//#4
+ 
+
+
+console.log(10 > "5") 
+console.log(2 > true) 
+console.log(1 > false) 
+console.log(1 > "") 
+console.log('' == '0' ) 
+console.log(1 > " ") 
+console.log(1 > null)
+console.log(10 > "a") 
+console.log(10 > NaN)
+console.log(10 > undefined)          
+console.log(0 == '' )             
+console.log(a > 5 || b > 5) 
+console.log(0 == '0')
+
+
+//#5
+
+let str="Hello"
+           let num=100;
+    console.log(str || num)
+    </script>
+</body>
+</html>
